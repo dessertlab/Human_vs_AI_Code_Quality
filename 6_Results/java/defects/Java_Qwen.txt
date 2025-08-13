@@ -1,0 +1,186 @@
+PMD + ODC stats
+────────────────────────────
+Total number of defects: 123180
+Total number of defective samples: 60389
+Average number of defects per sample: 2.04
+
+Total defects divided per ODC Defect Type:
+  - Assignment: 36100
+  - Checking: 34015
+  - Algorithm: 33380
+  - Function/Class/Object: 11344
+  - Timing: 7392
+  - Interface: 949
+
+Top 10 defects:
+  - UnusedFormalParameter: 24660
+  - SystemPrintln: 13329
+  - UseVarargs: 5826
+  - AppendCharacterWithChar: 5715
+  - AvoidInstantiatingObjectsInLoops: 5577
+  - SignatureDeclareThrowsException: 5113
+  - AvoidThrowingRawExceptionTypes: 4237
+  - AvoidSynchronizedAtMethodLevel: 4049
+  - LiteralsFirstInComparisons: 3939
+  - AvoidCatchingGenericException: 3938
+
+Distribution of ODC Defect Types per sample:
+  - 50434 samples in 1 different ODC defect types
+  - 8877 samples in 2 different ODC defect types
+  - 1017 samples in 3 different ODC defect types
+  - 60 samples in 4 different ODC defect types
+  - 1 samples in 5 different ODC defect types
+
+Distrbution of defects per ODC Defect Type:
+
+  Checking (34015)
+   • SystemPrintln: 13329
+   • SignatureDeclareThrowsException: 5113
+   • AvoidThrowingRawExceptionTypes: 4237
+   • AvoidCatchingGenericException: 3938
+   • AvoidPrintStackTrace: 1468
+   • AvoidUncheckedExceptionsInSignatures: 1263
+   • AvoidThrowingNullPointerException: 1163
+   • GuardLogStatement: 1116
+   • PreserveStackTrace: 809
+   • ExceptionAsFlowControl: 766
+   • EmptyCatchBlock: 436
+   • AvoidRethrowingException: 149
+   • AvoidThrowingNewInstanceOfSameException: 109
+   • AvoidCatchingThrowable: 74
+   • DoNotThrowExceptionInFinally: 23
+   • AvoidInstanceofChecksInCatchClause: 13
+   • AvoidCatchingNPE: 4
+   • ReturnFromFinallyBlock: 4
+   • InvalidLogMessageFormat: 1
+
+  Function/Class/Object (11344)
+   • UseVarargs: 5826
+   • ImmutableField: 2546
+   • UseObjectForClearerAPI: 736
+   • UnusedPrivateField: 585
+   • TooManyMethods: 419
+   • MissingSerialVersionUID: 235
+   • ArrayIsStoredDirectly: 183
+   • ExcessiveParameterList: 169
+   • SingletonClassReturningNewInstance: 139
+   • MissingOverride: 118
+   • AvoidFieldNameMatchingMethodName: 107
+   • MethodReturnsInternalArray: 87
+   • AvoidFieldNameMatchingTypeName: 45
+   • CouplingBetweenObjects: 28
+   • SingleMethodSingleton: 20
+   • OverrideBothEqualsAndHashcode: 17
+   • CloneMethodMustImplementCloneable: 13
+   • AvoidAccessibilityAlteration: 13
+   • LooseCoupling: 9
+   • UselessOverridingMethod: 7
+   • SingularField: 7
+   • UnitTestShouldUseTestAnnotation: 6
+   • ConstructorCallsOverridableMethod: 6
+   • FinalizeShouldBeProtected: 5
+   • TestClassWithoutTestCases: 4
+   • FinalizeOnlyCallsSuperFinalize: 4
+   • SuspiciousEqualsMethodName: 2
+   • CloneMethodMustBePublic: 2
+   • NonSerializableClass: 2
+   • DoNotExtendJavaLangThrowable: 2
+   • EmptyFinalizer: 1
+   • ProperCloneImplementation: 1
+
+  Algorithm (33380)
+   • AppendCharacterWithChar: 5715
+   • AvoidInstantiatingObjectsInLoops: 5577
+   • LiteralsFirstInComparisons: 3939
+   • CyclomaticComplexity: 3663
+   • ConsecutiveAppendsShouldReuse: 2600
+   • ConsecutiveLiteralAppends: 1879
+   • CognitiveComplexity: 1566
+   • SimplifyBooleanReturns: 1397
+   • CollapsibleIfStatements: 1148
+   • InsufficientStringBufferDeclaration: 1086
+   • AvoidDeeplyNestedIfStmts: 1079
+   • NPathComplexity: 541
+   • ReturnEmptyCollectionRatherThanNull: 468
+   • ForLoopCanBeForeach: 384
+   • InefficientEmptyStringCheck: 343
+   • AvoidArrayLoops: 299
+   • UseStringBufferForStringAppends: 263
+   • UseIndexOfChar: 179
+   • NonExhaustiveSwitch: 162
+   • CompareObjectsWithEquals: 154
+   • TooFewBranchesForSwitch: 147
+   • DoNotTerminateVM: 115
+   • UseArrayListInsteadOfVector: 88
+   • SimplifyConditional: 64
+   • AvoidUsingOctalValues: 56
+   • SimplifyBooleanExpressions: 50
+   • WhileLoopWithLiteralBoolean: 44
+   • ForLoopVariableCount: 40
+   • AvoidBranchingStatementAsLastInLoop: 35
+   • InefficientStringBuffering: 30
+   • PrimitiveWrapperInstantiation: 25
+   • DoubleBraceInitialization: 22
+   • SimplifiedTernary: 21
+   • UselessStringValueOf: 21
+   • ImplicitSwitchFallThrough: 20
+   • DoNotCallGarbageCollectionExplicitly: 19
+   • UnnecessaryCaseChange: 19
+   • AddEmptyString: 18
+   • NcssCount: 16
+   • UseEqualsToCompareStrings: 16
+   • UnusedNullCheckInEquals: 13
+   • StringInstantiation: 12
+   • IdempotentOperations: 8
+   • LogicInversion: 6
+   • SwitchDensity: 6
+   • UselessOperationOnImmutable: 6
+   • DontUseFloatTypeForLoopIndices: 5
+   • UnconditionalIfStatement: 4
+   • ConfusingArgumentToVarargsMethod: 3
+   • UnnecessaryVarargsArrayCreation: 2
+   • UseTryWithResources: 2
+   • ExhaustiveSwitchHasDefault: 1
+   • ReplaceVectorWithList: 1
+   • StringToString: 1
+   • MisplacedNullCheck: 1
+   • InstantiationToGetClass: 1
+
+  Timing (7392)
+   • AvoidSynchronizedAtMethodLevel: 4049
+   • DoNotUseThreads: 2605
+   • AvoidSynchronizedStatement: 680
+   • UseNotifyAllInsteadOfNotify: 23
+   • AvoidThreadGroup: 13
+   • UseConcurrentHashMap: 8
+   • DoubleCheckedLocking: 7
+   • AvoidUsingVolatile: 6
+   • NonThreadSafeSingleton: 1
+
+  Assignment (36100)
+   • UnusedFormalParameter: 24660
+   • AssignmentInOperand: 3078
+   • AvoidReassigningParameters: 2664
+   • UnusedLocalVariable: 1776
+   • UnusedAssignment: 1668
+   • NullAssignment: 1459
+   • AvoidReassigningLoopVariables: 477
+   • OneDeclarationPerLine: 284
+   • RedundantFieldInitializer: 28
+   • AvoidStringBufferField: 5
+   • AssignmentToNonFinalStatic: 1
+
+  Interface (949)
+   • CloseResource: 388
+   • AvoidUsingHardCodedIP: 287
+   • UseProperClassLoader: 266
+   • SimpleDateFormatNeedsLocale: 4
+   • AvoidFileStream: 2
+   • DoNotHardCodeSDCard: 2
+
+Distribution of defects per priority (severity):
+  - Priority 1: 6077
+  - Priority 2: 17343
+  - Priority 3: 227607
+  - Priority 4: 6134
+  - Priority 5: 1

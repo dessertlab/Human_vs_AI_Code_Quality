@@ -1,0 +1,214 @@
+PMD + ODC stats
+────────────────────────────
+Total number of defects: 242437
+Total number of defective samples: 155077 
+Average number of defects per sample: 1.56
+
+Total defects divided per ODC Defect Type:
+  - Function/Class/Object: 79724
+  - Checking: 74252
+  - Algorithm: 29023
+  - Assignment: 29020
+  - Timing: 16017
+  - Interface: 14401
+
+Top 10 defects:
+  - ImmutableField: 41669
+  - SystemPrintln: 37986
+  - UnusedPrivateField: 15793
+  - AvoidPrintStackTrace: 14267
+  - UnusedFormalParameter: 8910
+  - UnusedLocalVariable: 8518
+  - CloseResource: 8404
+  - AvoidCatchingGenericException: 7392
+  - UseConcurrentHashMap: 6580
+  - LooseCoupling: 6159
+
+Distribution of ODC Defect Types per sample:
+  - 138690 samples in 1 different ODC defect types
+  - 15164 samples in 2 different ODC defect types
+  - 1158 samples in 3 different ODC defect types
+  - 64 samples in 4 different ODC defect types
+  - 1 samples in 5 different ODC defect types
+
+Distrbution of defects per ODC Defect Type:
+
+  Function/Class/Object (79724)
+   • ImmutableField: 41669
+   • UnusedPrivateField: 15793
+   • LooseCoupling: 6159
+   • UseVarargs: 5790
+   • AvoidFieldNameMatchingTypeName: 1711
+   • MissingSerialVersionUID: 1389
+   • AvoidFieldNameMatchingMethodName: 1377
+   • ArrayIsStoredDirectly: 1373
+   • AvoidAccessibilityAlteration: 928
+   • MissingOverride: 844
+   • SingularField: 821
+   • MethodReturnsInternalArray: 389
+   • UseObjectForClearerAPI: 339
+   • ConstructorCallsOverridableMethod: 329
+   • TestClassWithoutTestCases: 248
+   • SingletonClassReturningNewInstance: 122
+   • CloneMethodMustBePublic: 85
+   • UselessOverridingMethod: 80
+   • MutableStaticState: 69
+   • OverrideBothEqualsAndHashcode: 55
+   • UnitTestShouldUseTestAnnotation: 35
+   • FinalFieldCouldBeStatic: 29
+   • ExcessiveParameterList: 19
+   • JUnit5TestShouldBePackagePrivate: 13
+   • ProperLogger: 13
+   • NonSerializableClass: 10
+   • SuspiciousEqualsMethodName: 8
+   • CloneMethodMustImplementCloneable: 6
+   • FinalizeDoesNotCallSuperFinalize: 6
+   • ProperCloneImplementation: 5
+   • MoreThanOneLogger: 2
+   • TooManyFields: 1
+   • ExcessivePublicCount: 1
+   • TooManyMethods: 1
+   • FinalizeOnlyCallsSuperFinalize: 1
+   • CallSuperLast: 1
+   • DoNotExtendJavaLangThrowable: 1
+   • NonStaticInitializer: 1
+   • FinalizeShouldBeProtected: 1
+
+  Checking (74252)
+   • SystemPrintln: 37986
+   • AvoidPrintStackTrace: 14267
+   • AvoidCatchingGenericException: 7392
+   • SignatureDeclareThrowsException: 4640
+   • AvoidThrowingRawExceptionTypes: 3031
+   • AvoidUncheckedExceptionsInSignatures: 1776
+   • PreserveStackTrace: 1278
+   • EmptyCatchBlock: 1076
+   • AvoidThrowingNullPointerException: 1020
+   • GuardLogStatement: 663
+   • ExceptionAsFlowControl: 569
+   • AvoidThrowingNewInstanceOfSameException: 240
+   • AvoidCatchingThrowable: 148
+   • AvoidRethrowingException: 96
+   • AvoidInstanceofChecksInCatchClause: 29
+   • DoNotThrowExceptionInFinally: 15
+   • AvoidLosingExceptionInformation: 7
+   • InvalidLogMessageFormat: 6
+   • ClassCastExceptionWithToArray: 6
+   • AvoidCatchingNPE: 5
+   • ReturnFromFinallyBlock: 2
+
+  Algorithm (29023)
+   • LiteralsFirstInComparisons: 4303
+   • AvoidInstantiatingObjectsInLoops: 4080
+   • AppendCharacterWithChar: 3818
+   • ConsecutiveAppendsShouldReuse: 3241
+   • SimplifyBooleanReturns: 2083
+   • CyclomaticComplexity: 1140
+   • ConsecutiveLiteralAppends: 956
+   • ReturnEmptyCollectionRatherThanNull: 928
+   • InsufficientStringBufferDeclaration: 763
+   • CollapsibleIfStatements: 742
+   • UseStringBufferForStringAppends: 558
+   • ForLoopCanBeForeach: 534
+   • ReplaceVectorWithList: 516
+   • UseTryWithResources: 479
+   • AvoidDeeplyNestedIfStmts: 427
+   • CognitiveComplexity: 419
+   • AvoidArrayLoops: 364
+   • InefficientStringBuffering: 339
+   • UseArraysAsList: 307
+   • InefficientEmptyStringCheck: 305
+   • UseIndexOfChar: 295
+   • CompareObjectsWithEquals: 288
+   • ReplaceHashtableWithMap: 262
+   • NonExhaustiveSwitch: 239
+   • UseArrayListInsteadOfVector: 226
+   • TooFewBranchesForSwitch: 180
+   • ExhaustiveSwitchHasDefault: 144
+   • DoNotTerminateVM: 111
+   • PrimitiveWrapperInstantiation: 100
+   • DoubleBraceInitialization: 71
+   • BigIntegerInstantiation: 71
+   • AvoidBranchingStatementAsLastInLoop: 68
+   • NPathComplexity: 61
+   • UseEnumCollections: 52
+   • ConfusingArgumentToVarargsMethod: 47
+   • UseCollectionIsEmpty: 42
+   • AddEmptyString: 42
+   • ForLoopVariableCount: 37
+   • DoNotCallGarbageCollectionExplicitly: 37
+   • SimplifyConditional: 28
+   • ReplaceEnumerationWithIterator: 28
+   • UnnecessaryCaseChange: 28
+   • SimplifyBooleanExpressions: 25
+   • AvoidDecimalLiteralsInBigDecimalConstructor: 24
+   • AvoidCalendarDateCreation: 23
+   • ImplicitSwitchFallThrough: 22
+   • StringInstantiation: 21
+   • AvoidUsingOctalValues: 21
+   • UnitTestShouldIncludeAssert: 20
+   • CheckSkipResult: 16
+   • UselessOperationOnImmutable: 14
+   • InstantiationToGetClass: 10
+   • StringToString: 9
+   • LogicInversion: 8
+   • UnnecessaryVarargsArrayCreation: 8
+   • UselessStringValueOf: 7
+   • UseEqualsToCompareStrings: 7
+   • UnusedNullCheckInEquals: 6
+   • SimplifiedTernary: 4
+   • UnitTestContainsTooManyAsserts: 4
+   • IdempotentOperations: 4
+   • OptimizableToArrayCall: 2
+   • UnconditionalIfStatement: 2
+   • DontUseFloatTypeForLoopIndices: 2
+   • WhileLoopWithLiteralBoolean: 1
+   • JumbledIncrementer: 1
+   • MisplacedNullCheck: 1
+   • NonCaseLabelInSwitch: 1
+   • EqualsNull: 1
+
+  Timing (16017)
+   • UseConcurrentHashMap: 6580
+   • DoNotUseThreads: 5979
+   • AvoidSynchronizedAtMethodLevel: 2658
+   • AvoidSynchronizedStatement: 349
+   • NonThreadSafeSingleton: 293
+   • AvoidUsingVolatile: 87
+   • UseNotifyAllInsteadOfNotify: 36
+   • AvoidThreadGroup: 23
+   • DoubleCheckedLocking: 11
+   • UnsynchronizedStaticFormatter: 1
+
+  Assignment (29020)
+   • UnusedFormalParameter: 8910
+   • UnusedLocalVariable: 8518
+   • AssignmentInOperand: 3201
+   • AvoidReassigningParameters: 2411
+   • UnusedAssignment: 1922
+   • RedundantFieldInitializer: 1884
+   • NullAssignment: 1265
+   • OneDeclarationPerLine: 373
+   • AvoidStringBufferField: 276
+   • AvoidReassigningLoopVariables: 229
+   • AvoidMessageDigestField: 17
+   • AssignmentToNonFinalStatic: 14
+
+  Interface (14401)
+   • CloseResource: 8404
+   • AvoidFileStream: 4421
+   • SimpleDateFormatNeedsLocale: 616
+   • UseProperClassLoader: 509
+   • AvoidUsingHardCodedIP: 294
+   • UseStandardCharsets: 72
+   • DontImportSun: 61
+   • CheckResultSet: 11
+   • UseIOStreamsWithApacheCommonsFileItem: 11
+   • DoNotHardCodeSDCard: 2
+
+Distribution of defects per priority (severity):
+  - Priority 1: 12119
+  - Priority 2: 41417
+  - Priority 3: 293996
+  - Priority 4: 6249
+  - Priority 5: 6

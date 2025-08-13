@@ -1,0 +1,87 @@
+Total vulnerable functions (excluding errors): 22878 
+Total issues (considering multiple issues per function and excluding errors): 39982
+
+Final Unified CWE Set (without duplicates): 43
+
+Top 10 CWEs by occurrence (across all severities):
+ 1. CWE-78: 10908
+ 2. CWE-400: 7987
+ 3. CWE-611: IMPROPER RESTRICTION OF XML EXTERNAL ENTITY REFERENCE: 6372
+ 4. CWE-319: Cleartext Transmission of Sensitive Information: 1928
+ 5. CWE-330: 1853
+ 6. CWE-502: Deserialization of Untrusted Data: 1692
+ 7. CWE-327: 1668
+ 8. CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection'): 1305
+ 9. CWE-489: 1038
+10. CWE-706: Use of Incorrectly-Resolved Name or Reference: 765
+
+Severity types: {'ERROR', 'INFO', 'CRITICAL', 'WARNING'}
+CWEs divided by severity:
+{'CRITICAL': {"CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')": 15},
+ 'ERROR': {'CWE-1104': 296,
+           "CWE-22: IMPROPER LIMITATION OF A PATHNAME TO A RESTRICTED DIRECTORY ('PATH TRAVERSAL')": 80,
+           'CWE-287: Improper Authentication': 20,
+           'CWE-295: IMPROPER CERTIFICATE VALIDATION': 11,
+           'CWE-319: Cleartext Transmission of Sensitive Information': 47,
+           'CWE-326': 18,
+           'CWE-327': 18,
+           'CWE-377': 8,
+           'CWE-489': 2,
+           'CWE-502: Deserialization of Untrusted Data': 68,
+           'CWE-522: Insufficiently Protected Credentials': 40,
+           'CWE-523: Unprotected Transport of Credentials': 11,
+           "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')": 7,
+           'CWE-611: IMPROPER RESTRICTION OF XML EXTERNAL ENTITY REFERENCE': 5193,
+           "CWE-776: Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')": 65,
+           'CWE-78': 1693,
+           "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')": 720,
+           'CWE-918: Server-Side Request Forgery (SSRF)': 22,
+           'CWE-95': 1},
+ 'INFO': {"CWE-1004: Sensitive Cookie Without 'HttpOnly' Flag": 25,
+          'CWE-1275: Sensitive Cookie with Improper SameSite Attribute': 26,
+          'CWE-200': 98,
+          'CWE-319: Cleartext Transmission of Sensitive Information': 1797,
+          'CWE-328: Use of Weak Hash': 13,
+          'CWE-330': 1845,
+          'CWE-377': 8,
+          'CWE-489': 339,
+          "CWE-614: Sensitive Cookie in HTTPS Session Without 'Secure' Attribute": 26,
+          'CWE-754': 528,
+          'CWE-78': 1227,
+          "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')": 6,
+          'CWE-95': 4},
+ 'WARNING': {"CWE-1004: Sensitive Cookie Without 'HttpOnly' Flag": 2,
+             'CWE-116': 350,
+             'CWE-155': 17,
+             "CWE-22: IMPROPER LIMITATION OF A PATHNAME TO A RESTRICTED DIRECTORY ('PATH TRAVERSAL')": 17,
+             'CWE-250: Execution with Unnecessary Privileges': 14,
+             'CWE-276: Incorrect Default Permissions': 81,
+             'CWE-295: IMPROPER CERTIFICATE VALIDATION': 96,
+             'CWE-319: Cleartext Transmission of Sensitive Information': 84,
+             'CWE-326': 61,
+             'CWE-327': 1650,
+             'CWE-330': 8,
+             'CWE-352: Cross-Site Request Forgery (CSRF)': 18,
+             'CWE-377': 59,
+             'CWE-400': 7987,
+             'CWE-489': 697,
+             'CWE-502: Deserialization of Untrusted Data': 1624,
+             'CWE-521: Weak Password Requirements': 9,
+             'CWE-522: Insufficiently Protected Credentials': 9,
+             "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')": 15,
+             'CWE-611: IMPROPER RESTRICTION OF XML EXTERNAL ENTITY REFERENCE': 1179,
+             "CWE-614: Sensitive Cookie in HTTPS Session Without 'Secure' Attribute": 30,
+             'CWE-668: Exposure of Resource to Wrong Sphere': 21,
+             'CWE-673: External Influence of Sphere Definition': 13,
+             'CWE-676: USE OF POTENTIALLY DANGEROUS FUNCTION': 14,
+             'CWE-706: Use of Incorrectly-Resolved Name or Reference': 765,
+             'CWE-732': 26,
+             'CWE-73: External Control of File Name or Path': 1,
+             'CWE-78': 7988,
+             'CWE-798: Use of Hard-coded Credentials': 551,
+             "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')": 509,
+             "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')": 570,
+             'CWE-918: Server-Side Request Forgery (SSRF)': 3,
+             'CWE-939': 396,
+             'CWE-95': 702,
+             "CWE-96: Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')": 139}}

@@ -1,0 +1,92 @@
+Total defective functions (excluding errors): 43386 
+Total issues (considering multiple issues per function and excluding errors): 76678
+
+Final Unified CWE Set (without duplicates): 51
+
+Top 10 CWEs by occurrence (across all severities):
+ 1. CWE-532: 30031
+ 2. CWE-489: Active Debug Code: 17533
+ 3. CWE-798: Use of Hard-coded Credentials: 5199
+ 4. CWE-209: 4549
+ 5. CWE-22: 3738
+ 6. CWE-89: 2731
+ 7. CWE-611: Improper Restriction of XML External Entity Reference: 1960
+ 8. CWE-321: USE OF HARD-CODED CRYPTOGRAPHIC KEY: 1757
+ 9. CWE-330: 1584
+10. CWE-319: CLEARTEXT TRANSMISSION OF SENSITIVE INFORMATION: 1532
+
+Severity types: {'CRITICAL', 'WARNING', 'INFO', 'ERROR'}
+CWEs divided by severity:
+{'CRITICAL': {'CWE-200: Exposure of Sensitive Information to an Unauthorized Actor': 2},
+ 'ERROR': {"CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Request/Response Splitting')": 2,
+           'CWE-176': 65,
+           'CWE-22': 3425,
+           'CWE-23: Relative Path Traversal': 2,
+           'CWE-259': 1000,
+           'CWE-295': 126,
+           'CWE-297': 2,
+           'CWE-306': 12,
+           'CWE-319: CLEARTEXT TRANSMISSION OF SENSITIVE INFORMATION': 8,
+           'CWE-321: USE OF HARD-CODED CRYPTOGRAPHIC KEY': 117,
+           'CWE-326': 6,
+           'CWE-327': 134,
+           'CWE-329: Generation of Predictable IV with CBC Mode': 1,
+           "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')": 2,
+           'CWE-611: Improper Restriction of XML External Entity Reference': 1957,
+           'CWE-643': 39,
+           'CWE-649': 25,
+           'CWE-77': 17,
+           "CWE-776: Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')": 700,
+           'CWE-78': 203,
+           'CWE-79': 3,
+           'CWE-798: Use of Hard-coded Credentials': 1,
+           'CWE-89': 1542,
+           'CWE-917': 6,
+           'CWE-918': 181,
+           'CWE-919': 45,
+           "CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')": 1,
+           'CWE-942': 8,
+           "CWE-94: Improper Control of Generation of Code ('Code Injection')": 90},
+ 'INFO': {"CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Request/Response Splitting')": 3,
+          'CWE-295': 1,
+          'CWE-501: Trust Boundary Violation': 6,
+          'CWE-532': 30031,
+          'CWE-611: Improper Restriction of XML External Entity Reference': 1,
+          "CWE-776: Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')": 1,
+          'CWE-919': 3},
+ 'WARNING': {'CWE-1004': 119,
+             'CWE-182': 20,
+             'CWE-183: Permissive List of Allowed Inputs': 5,
+             'CWE-20': 387,
+             'CWE-200: Exposure of Sensitive Information to an Unauthorized Actor': 2,
+             'CWE-209': 4549,
+             'CWE-22': 313,
+             'CWE-276: Incorrect Default Permissions': 10,
+             'CWE-295': 169,
+             'CWE-319: CLEARTEXT TRANSMISSION OF SENSITIVE INFORMATION': 1524,
+             'CWE-321: USE OF HARD-CODED CRYPTOGRAPHIC KEY': 1640,
+             'CWE-326': 175,
+             'CWE-327': 377,
+             'CWE-328: Use of Weak Hash': 204,
+             'CWE-329: Generation of Predictable IV with CBC Mode': 1,
+             'CWE-330': 1584,
+             'CWE-345: Insufficient Verification of Data Authenticity': 2,
+             'CWE-352: Cross-Site Request Forgery (CSRF)': 135,
+             "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')": 984,
+             'CWE-489: Active Debug Code': 17533,
+             'CWE-501: Trust Boundary Violation': 66,
+             'CWE-502: Deserialization of Untrusted Data': 840,
+             "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')": 10,
+             'CWE-611: Improper Restriction of XML External Entity Reference': 2,
+             'CWE-614': 172,
+             'CWE-704: Incorrect Type Conversion or Cast': 42,
+             'CWE-732': 10,
+             'CWE-74': 1,
+             'CWE-757': 27,
+             'CWE-78': 80,
+             'CWE-79': 42,
+             'CWE-798: Use of Hard-coded Credentials': 5198,
+             'CWE-89': 1189,
+             'CWE-90': 41,
+             'CWE-917': 12,
+             "CWE-94: Improper Control of Generation of Code ('Code Injection')": 146}}

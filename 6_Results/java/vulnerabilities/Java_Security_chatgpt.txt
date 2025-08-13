@@ -1,0 +1,88 @@
+Total defective functions (excluding errors): 18144
+Total issues (considering multiple issues per function and excluding errors): 29807
+
+Final Unified CWE Set (without duplicates): 49
+
+Top 10 CWEs by occurrence (across all severities):
+ 1. CWE-532: 6915
+ 2. CWE-489: Active Debug Code: 5659
+ 3. CWE-22: 2886
+ 4. CWE-89: 1874
+ 5. CWE-798: Use of Hard-coded Credentials: 1737
+ 6. CWE-611: Improper Restriction of XML External Entity Reference: 1480
+ 7. CWE-209: 1238
+ 8. CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection'): 1228
+ 9. CWE-502: Deserialization of Untrusted Data: 1064
+10. CWE-321: USE OF HARD-CODED CRYPTOGRAPHIC KEY: 989
+
+Severity types: {'ERROR', 'CRITICAL', 'INFO', 'WARNING'}
+CWEs divided by severity:
+{'CRITICAL': {'CWE-200: Exposure of Sensitive Information to an Unauthorized Actor': 1},
+ 'ERROR': {'CWE-113': 2,
+           'CWE-176': 67,
+           'CWE-22': 2753,
+           'CWE-259': 127,
+           'CWE-295': 208,
+           'CWE-297: Improper Validation of Certificate with Host Mismatch': 3,
+           'CWE-306': 2,
+           'CWE-319': 7,
+           'CWE-321: USE OF HARD-CODED CRYPTOGRAPHIC KEY': 156,
+           'CWE-326: Inadequate Encryption Strength': 3,
+           'CWE-327': 143,
+           'CWE-329: Generation of Predictable IV with CBC Mode': 1,
+           'CWE-611: Improper Restriction of XML External Entity Reference': 1471,
+           'CWE-643': 52,
+           'CWE-649': 72,
+           'CWE-77': 18,
+           "CWE-776: Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')": 350,
+           'CWE-78': 342,
+           "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')": 7,
+           'CWE-89': 519,
+           'CWE-917': 1,
+           'CWE-918': 114,
+           'CWE-919': 79,
+           "CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')": 3,
+           'CWE-942': 13,
+           "CWE-94: Improper Control of Generation of Code ('Code Injection')": 17},
+ 'INFO': {'CWE-113': 1,
+          'CWE-501': 7,
+          'CWE-532': 6915,
+          'CWE-611: Improper Restriction of XML External Entity Reference': 6,
+          "CWE-776: Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')": 6,
+          'CWE-919': 1},
+ 'WARNING': {"CWE-1004: Sensitive Cookie Without 'HttpOnly' Flag": 87,
+             'CWE-182': 10,
+             'CWE-183: Permissive List of Allowed Inputs': 7,
+             'CWE-20': 275,
+             'CWE-200: Exposure of Sensitive Information to an Unauthorized Actor': 1,
+             'CWE-209': 1238,
+             'CWE-22': 133,
+             'CWE-276: Incorrect Default Permissions': 10,
+             'CWE-287: Improper Authentication': 1,
+             'CWE-295': 156,
+             'CWE-297: Improper Validation of Certificate with Host Mismatch': 4,
+             'CWE-319': 546,
+             'CWE-321: USE OF HARD-CODED CRYPTOGRAPHIC KEY': 833,
+             'CWE-326: Inadequate Encryption Strength': 197,
+             'CWE-327': 541,
+             'CWE-328: Use of Weak Hash': 230,
+             'CWE-329: Generation of Predictable IV with CBC Mode': 3,
+             'CWE-330': 615,
+             'CWE-352: Cross-Site Request Forgery (CSRF)': 113,
+             "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')": 1228,
+             'CWE-489: Active Debug Code': 5659,
+             'CWE-501': 111,
+             'CWE-502: Deserialization of Untrusted Data': 1064,
+             "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')": 10,
+             'CWE-611: Improper Restriction of XML External Entity Reference': 3,
+             "CWE-614: Sensitive Cookie in HTTPS Session Without 'Secure' Attribute": 128,
+             'CWE-704: Incorrect Type Conversion or Cast': 58,
+             'CWE-732': 10,
+             'CWE-757': 25,
+             'CWE-78': 104,
+             'CWE-798: Use of Hard-coded Credentials': 1737,
+             "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')": 20,
+             'CWE-89': 1355,
+             'CWE-90': 53,
+             'CWE-917': 13,
+             "CWE-94: Improper Control of Generation of Code ('Code Injection')": 118}}

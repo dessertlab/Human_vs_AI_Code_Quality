@@ -1,0 +1,223 @@
+Pylint + ODC stats
+────────────────────────────
+Total number of defects: 319643
+Total number of defective samples: 173899
+Average number of defects per sample: 1.84
+
+Total defects divided per ODC Defect Type:
+  - Assignment: 128101
+  - Function/Class/Object: 78925
+  - Algorithm: 51178
+  - Interface: 36751
+  - Checking: 24688
+
+Top 10 defects:
+  - unused-argument: 111703
+  - too-few-public-methods: 64279
+  - no-else-return: 33062
+  - unspecified-encoding: 13112
+  - redefined-outer-name: 12631
+  - unused-variable: 8065
+  - missing-timeout: 8054
+  - redefined-builtin: 6020
+  - protected-access: 5304
+  - no-member: 4952
+
+Distribution of ODC Defect Types per sample:
+  - 120739 samples in 1 different ODC defect types
+  - 44872 samples in 2 different ODC defect types
+  - 7651 samples in 3 different ODC defect types
+  - 614 samples in 4 different ODC defect types
+  - 23 samples in 5 different ODC defect types
+
+Distrbution of defects per ODC Defect Type:
+
+  Algorithm (51178)
+   • no-else-return: 33062
+   • unnecessary-pass: 4493
+   • simplifiable-if-statement: 2510
+   • inconsistent-return-statements: 2468
+   • consider-using-enumerate: 1723
+   • no-else-raise: 1264
+   • assignment-from-no-return: 1171
+   • use-yield-from: 891
+   • consider-using-in: 404
+   • too-many-return-statements: 312
+   • consider-using-generator: 190
+   • singleton-comparison: 187
+   • chained-comparison: 170
+   • consider-using-dict-items: 161
+   • consider-merging-isinstance: 159
+   • unnecessary-lambda-assignment: 152
+   • use-dict-literal: 140
+   • consider-iterating-dictionary: 132
+   • useless-return: 127
+   • cell-var-from-loop: 123
+   • no-else-break: 118
+   • f-string-without-interpolation: 113
+   • unnecessary-lambda: 111
+   • consider-using-max-builtin: 98
+   • multiple-statements: 97
+   • consider-using-min-builtin: 74
+   • no-else-continue: 73
+   • too-many-nested-blocks: 67
+   • unbalanced-tuple-unpacking: 66
+   • too-many-boolean-expressions: 55
+   • pointless-statement: 50
+   • stop-iteration-return: 43
+   • consider-using-join: 42
+   • too-many-branches: 41
+   • duplicate-key: 31
+   • expression-not-assigned: 28
+   • consider-using-get: 27
+   • consider-using-set-comprehension: 25
+   • nested-min-max: 17
+   • assignment-from-none: 17
+   • unreachable: 13
+   • trailing-comma-tuple: 12
+   • unnecessary-semicolon: 11
+   • modified-iterating-list: 10
+   • simplifiable-if-expression: 10
+   • using-constant-test: 8
+   • unnecessary-dict-index-lookup: 7
+   • comparison-of-constants: 7
+   • return-in-finally: 6
+   • bad-str-strip-call: 6
+   • duplicate-value: 5
+   • redundant-keyword-arg: 5
+   • consider-swap-variables: 5
+   • unnecessary-negation: 5
+   • use-list-literal: 5
+   • useless-else-on-loop: 4
+   • return-outside-function: 3
+   • use-implicit-booleaness-not-comparison: 3
+   • use-a-generator: 3
+   • unnecessary-list-index-lookup: 3
+   • consider-using-dict-comprehension: 2
+   • yield-inside-async-function: 2
+   • unpacking-non-sequence: 2
+   • implicit-str-concat: 2
+   • modified-iterating-dict: 1
+   • invalid-repr-returned: 1
+   • consider-using-ternary: 1
+   • pointless-string-statement: 1
+   • literal-comparison: 1
+   • missing-parentheses-for-call-in-test: 1
+   • unnecessary-ellipsis: 1
+
+  Assignment (128101)
+   • unused-argument: 111703
+   • unused-variable: 8065
+   • redefined-builtin: 6020
+   • attribute-defined-outside-init: 1074
+   • redefined-argument-from-local: 279
+   • possibly-used-before-assignment: 144
+   • used-before-assignment: 131
+   • disallowed-name: 124
+   • global-variable-not-assigned: 108
+   • undefined-loop-variable: 100
+   • global-variable-undefined: 98
+   • global-statement: 96
+   • self-assigning-variable: 54
+   • too-many-locals: 45
+   • access-member-before-definition: 20
+   • missing-format-argument-key: 14
+   • self-cls-assignment: 11
+   • duplicate-argument-name: 8
+   • possibly-unused-variable: 5
+   • used-prior-global-declaration: 1
+   • global-at-module-level: 1
+
+  Function/Class/Object (78925)
+   • too-few-public-methods: 64279
+   • redefined-outer-name: 12631
+   • method-hidden: 690
+   • unused-private-member: 433
+   • useless-parent-delegation: 386
+   • function-redefined: 158
+   • useless-object-inheritance: 135
+   • abstract-method: 116
+   • too-many-instance-attributes: 32
+   • no-self-argument: 22
+   • too-many-ancestors: 21
+   • super-init-not-called: 11
+   • bad-staticmethod-argument: 4
+   • bad-mcs-method-argument: 3
+   • return-in-init: 2
+   • invalid-overridden-method: 2
+
+  Checking (24688)
+   • missing-timeout: 8054
+   • broad-exception-caught: 3791
+   • broad-exception-raised: 3633
+   • raise-missing-from: 3084
+   • subprocess-run-check: 2282
+   • dangerous-default-value: 1540
+   • consider-using-with: 1477
+   • bare-except: 618
+   • try-except-raise: 79
+   • forgotten-debug-statement: 42
+   • duplicate-except: 30
+   • comparison-with-itself: 29
+   • misplaced-bare-raise: 12
+   • bad-except-order: 7
+   • lost-exception: 6
+   • catching-non-exception: 2
+   • raising-bad-type: 2
+
+  Interface (36751)
+   • unspecified-encoding: 13112
+   • protected-access: 5304
+   • no-member: 4952
+   • too-many-arguments: 4079
+   • too-many-positional-arguments: 4067
+   • no-name-in-module: 865
+   • anomalous-backslash-in-string: 798
+   • no-value-for-parameter: 455
+   • logging-fstring-interpolation: 441
+   • super-with-arguments: 423
+   • keyword-arg-before-vararg: 310
+   • eval-used: 245
+   • exec-used: 227
+   • unidiomatic-typecheck: 184
+   • unexpected-keyword-arg: 144
+   • consider-using-sys-exit: 140
+   • not-callable: 123
+   • too-many-function-args: 122
+   • not-an-iterable: 106
+   • unnecessary-dunder-call: 83
+   • deprecated-method: 76
+   • use-maxsplit-arg: 56
+   • arguments-renamed: 50
+   • unsubscriptable-object: 49
+   • arguments-differ: 45
+   • isinstance-second-argument-not-valid-type: 32
+   • deprecated-module: 31
+   • not-context-manager: 30
+   • unsupported-assignment-operation: 29
+   • missing-kwoa: 27
+   • duplicate-string-formatting-argument: 21
+   • arguments-out-of-order: 21
+   • invalid-sequence-index: 13
+   • deprecated-class: 11
+   • logging-not-lazy: 9
+   • bad-format-string: 9
+   • unsupported-membership-test: 8
+   • inherit-non-class: 7
+   • comparison-with-callable: 7
+   • too-few-format-args: 6
+   • invalid-envvar-default: 6
+   • non-ascii-name: 4
+   • await-outside-async: 4
+   • abstract-class-instantiated: 3
+   • method-cache-max-size-none: 3
+   • subprocess-popen-preexec-fn: 3
+   • format-combined-specification: 2
+   • invalid-unary-operand-type: 2
+   • format-string-without-interpolation: 1
+   • bad-thread-instantiation: 1
+   • shallow-copy-environ: 1
+   • anomalous-unicode-escape-in-string: 1
+   • not-a-mapping: 1
+   • signature-differs: 1
+   • confusing-with-statement: 1

@@ -1,0 +1,2 @@
+Unique GitHub repositories: 4296
+Average docstring length (in tokens): 24.86

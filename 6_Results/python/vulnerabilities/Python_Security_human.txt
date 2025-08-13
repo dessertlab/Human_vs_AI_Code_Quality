@@ -1,0 +1,86 @@
+Total vulnerable functions (excluding errors): 15835 
+Total issues (considering multiple issues per function and excluding errors): 25678
+
+Final Unified CWE Set (without duplicates): 45
+
+Top 10 CWEs by occurrence (across all severities):
+ 1. CWE-754: 13157
+ 2. CWE-78: 2243
+ 3. CWE-400: 1631
+ 4. CWE-502: 1349
+ 5. CWE-330: 1272
+ 6. CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection'): 1152
+ 7. CWE-327: 1097
+ 8. CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection'): 1065
+ 9. CWE-939: 370
+10. CWE-706: Use of Incorrectly-Resolved Name or Reference: 370
+
+Severity types: {'WARNING', 'ERROR', 'INFO', 'CRITICAL'}
+CWEs divided by severity:
+{'CRITICAL': {"CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')": 6},
+ 'ERROR': {'CWE-1104': 10,
+           'CWE-1236: Improper Neutralization of Formula Elements in a CSV File': 1,
+           "CWE-22: IMPROPER LIMITATION OF A PATHNAME TO A RESTRICTED DIRECTORY ('PATH TRAVERSAL')": 81,
+           'CWE-287: Improper Authentication': 1,
+           'CWE-295': 158,
+           'CWE-319: Cleartext Transmission of Sensitive Information': 6,
+           'CWE-321: Use of Hard-coded Cryptographic Key': 1,
+           'CWE-326: Inadequate Encryption Strength': 16,
+           'CWE-327': 7,
+           'CWE-377': 27,
+           'CWE-489: Active Debug Code': 2,
+           'CWE-502': 34,
+           'CWE-521: Weak Password Requirements': 3,
+           'CWE-611': 167,
+           'CWE-676: USE OF POTENTIALLY DANGEROUS FUNCTION': 2,
+           'CWE-704: Incorrect Type Conversion or Cast': 6,
+           "CWE-776: Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion')": 1,
+           'CWE-78': 658,
+           'CWE-798: Use of Hard-coded Credentials': 4,
+           "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')": 582,
+           'CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes': 1,
+           'CWE-918: Server-Side Request Forgery (SSRF)': 4,
+           "CWE-96: Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')": 1},
+ 'INFO': {"CWE-1004: Sensitive Cookie Without 'HttpOnly' Flag": 2,
+          'CWE-1275: Sensitive Cookie with Improper SameSite Attribute': 2,
+          'CWE-200': 26,
+          'CWE-319: Cleartext Transmission of Sensitive Information': 183,
+          'CWE-330': 1222,
+          'CWE-377': 27,
+          'CWE-754': 13157,
+          'CWE-78': 357,
+          "CWE-79: IMPROPER NEUTRALIZATION OF INPUT DURING WEB PAGE GENERATION ('CROSS-SITE SCRIPTING')": 2,
+          "CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')": 2},
+ 'WARNING': {'CWE-116': 60,
+             'CWE-155': 8,
+             'CWE-20: IMPROPER INPUT VALIDATION': 2,
+             "CWE-22: IMPROPER LIMITATION OF A PATHNAME TO A RESTRICTED DIRECTORY ('PATH TRAVERSAL')": 5,
+             'CWE-250: Execution with Unnecessary Privileges': 4,
+             'CWE-276: Incorrect Default Permissions': 95,
+             'CWE-295': 71,
+             'CWE-319: Cleartext Transmission of Sensitive Information': 46,
+             'CWE-326: Inadequate Encryption Strength': 70,
+             'CWE-327': 1090,
+             'CWE-330': 50,
+             'CWE-377': 78,
+             'CWE-400': 1631,
+             'CWE-502': 1315,
+             'CWE-521: Weak Password Requirements': 24,
+             'CWE-522: Insufficiently Protected Credentials': 4,
+             'CWE-532: Insertion of Sensitive Information into Log File': 167,
+             'CWE-611': 100,
+             'CWE-668: Exposure of Resource to Wrong Sphere': 3,
+             'CWE-673: External Influence of Sphere Definition': 38,
+             'CWE-676: USE OF POTENTIALLY DANGEROUS FUNCTION': 7,
+             'CWE-706: Use of Incorrectly-Resolved Name or Reference': 370,
+             'CWE-732': 15,
+             'CWE-78': 1228,
+             'CWE-798: Use of Hard-coded Credentials': 27,
+             "CWE-79: IMPROPER NEUTRALIZATION OF INPUT DURING WEB PAGE GENERATION ('CROSS-SITE SCRIPTING')": 221,
+             "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')": 564,
+             'CWE-918: Server-Side Request Forgery (SSRF)': 13,
+             'CWE-939': 370,
+             "CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')": 11,
+             "CWE-94: Improper Control of Generation of Code ('Code Injection')": 9,
+             "CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')": 1063,
+             "CWE-96: Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')": 160}}
