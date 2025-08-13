@@ -6,7 +6,7 @@
   pip install -r requirements.txt
 
   alias pmd="$PWD/pmd-bin-7.16.0/bin/pmd"
-  pmd (to check whether it's working)
+  pmd [[to check whether it's working]]
 
 # RUN PYTHON ANALYSES (Only example run on human written code, simply change field (e.g., dsc_code) to run on AI-generated code)
 
@@ -31,7 +31,7 @@
     mkdir java_human_temp
     python 3_Code_Defects_Analysis/wrap_java_functions.py 1_dataset_sample_100/java_dataset.jsonl
 
-    bash 3_Code_Defects_Analysis/run_PMD_analysis.sh java_human_temp (dont mind the "failed" warning)
+    bash 3_Code_Defects_Analysis/run_PMD_analysis.sh java_human_temp [[don't mind the "PMD failed" warning, it just means that some files contain syntax errors]]
     mkdir PMD_Human
     cd PMD_Human
     mkdir reports
@@ -42,7 +42,7 @@
 
   ## Running Vulnerabilities Analysis
 
-    cd .. (main directory)
+    cd ..
     python 4_Code_Security_Analysis/run_semgrep_java.py 1_dataset_sample_100/java_dataset.jsonl 100
     python 4_Code_Security_Analysis/process_semgrep_results_java.py semgrep_batches/1_dataset_sample_100/java_dataset.jsonl_semgrep_results_batch 1      
 

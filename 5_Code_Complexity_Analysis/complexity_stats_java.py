@@ -30,7 +30,7 @@ def analyze_code(code: str):
 
 def print_stats(metrics_by_field, tokens_by_field):
     for field, metrics in metrics_by_field.items():
-        print(f"\nStats for {field} ({len(metrics)} functions):")
+        print(f"\nStats for {field}:")
         for key in ["nloc", "ccn", "token_count", "function_name_length"]:
             values = [m[key] for m in metrics]
             print(f"  {key.upper():20} | Avg: {statistics.mean(values):6.2f} | Min: {min(values):3} | Max: {max(values):3} | Std: {statistics.stdev(values):6.2f}" if len(values) > 1 else f"  {key.upper():20} | Only one value: {values[0]}")
@@ -38,7 +38,7 @@ def print_stats(metrics_by_field, tokens_by_field):
 
     all_metrics = [m for metrics in metrics_by_field.values() for m in metrics]
     all_tokens = set().union(*tokens_by_field.values())
-    print(f"\nAggregated Stats across ALL models ({len(all_metrics)} functions):")
+    print(f"\nAggregated Stats across ALL models:")
     for key in ["nloc", "ccn", "token_count", "function_name_length"]:
         values = [m[key] for m in all_metrics]
         print(f"  {key.upper():20} | Avg: {statistics.mean(values):6.2f} | Min: {min(values):3} | Max: {max(values):3} | Std: {statistics.stdev(values):6.2f}")
