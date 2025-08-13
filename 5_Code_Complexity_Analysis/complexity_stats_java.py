@@ -48,7 +48,7 @@ def main():
     metrics_by_field = defaultdict(list)
     tokens_by_field = defaultdict(set)
 
-    with open("java_dataset_dsc_qwen_MOD.jsonl", "r") as f:
+    with open("java_dataset.jsonl", "r") as f:
         lines = f.readlines()
         for line in tqdm(lines, desc="Processing Java code"):
             item = json.loads(line)

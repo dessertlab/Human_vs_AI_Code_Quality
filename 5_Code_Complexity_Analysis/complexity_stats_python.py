@@ -48,7 +48,7 @@ def main():
     metrics_by_field = defaultdict(list)
     tokens_by_field = defaultdict(set)
 
-    with open("python_dataset_nodocs_dsc_qwen_FINAL.jsonl", "r") as f:
+    with open("python_dataset.jsonl", "r") as f:
         lines = f.readlines()
         for i, line in enumerate(tqdm(lines, desc="Processing Python code")):
             try:
