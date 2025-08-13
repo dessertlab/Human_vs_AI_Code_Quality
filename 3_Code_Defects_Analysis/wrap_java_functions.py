@@ -3,8 +3,9 @@ import json
 import re
 import string
 
-input_path = "$input_file"
-output_dir = "$unique_dir"
+input_path = "" # Your dataset path here
+output_dir = "" # Your output directory here
+code_field = ""  # Field containing the Java code you want to analyze in the JSONL file
 
 
 def extract_top_level_type_name(code_str):
@@ -72,7 +73,7 @@ with open(input_path, 'r') as f:
     for idx, line in enumerate(f):
         try:
             entry = json.loads(line)
-            func_code = entry.get("dsc_code")
+            func_code = entry.get(code_field)
             if func_code:
                 package_stmt, code_no_package = extract_and_clean_package(func_code)
                 imports_stmt, cleaned_code = extract_and_clean_imports(code_no_package)
