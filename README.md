@@ -1,6 +1,8 @@
 # Human-Written vs. AI-Generated Code: A Large-Scale Study of Defects, Vulnerabilities, and Complexity
 
-This repository contains the datasets, code, and analyses used in our experiments on code defects, security vulnerabilities and code complexity, as well as ODC (Orthogonal Defect Classification) mappings and final experimental results.
+This repository allows the replication of our study *_Human-Written vs. AI-Generated Code: A Large-Scale Study of Defects, Vulnerabilities, and Complexity_* accepted for publication at _The 36th IEEE International Symposium on Software Reliability Engineering (ISSRE 2025)_. 
+
+It contains the datasets, code, and analyses used in our experiments on code defects, security vulnerabilities and code complexity, as well as ODC (Orthogonal Defect Classification) mappings and final experimental results.
 
 ## 1. **Datasets**
 
