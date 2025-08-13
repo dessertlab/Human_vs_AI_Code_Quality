@@ -1,0 +1,57 @@
+# CREATE ENVIRONMENT
+
+  conda create -n Human_vs_AI python=3.9
+  conda activate Human_vs_AI
+
+  pip install -r requirements.txt
+
+  alias pmd="$PWD/pmd-bin-7.16.0/bin/pmd"
+  pmd (to check whether it's working)
+
+# RUN PYTHON ANALYSES (Only example run on human written code, simply change field (e.g., dsc_code) to run on AI-generated code)
+
+  ## Running Defects Analysis
+
+    python 3_Code_Defects_Analysis/pylint_ODC.py
+    python 3_Code_Defects_Analysis/process_pylint_results.py 
+
+  ## Running Vulnerabilities Analysis
+
+    python 4_Code_Security_Analysis/run_semgrep_python.py 1_dataset_sample_100/python_dataset.jsonl
+    python 4_Code_Security_Analysis/process_semgrep_results_python.py python_dataset_semgrep_results_batch 1 
+
+  ## Running Complexity Analysis
+
+    python 5_Code_Complexity_Analysis/complexity_stats_python.py
+
+# RUN JAVA ANALYSES (Only example run on human written code, simply change field (e.g., dsc_code) to run on AI-generated code)
+
+  ## Running Defects Analysis
+
+    mkdir java_human_temp
+    python 3_Code_Defects_Analysis/wrap_java_functions.py 1_dataset_sample_100/java_dataset.jsonl
+
+    bash 3_Code_Defects_Analysis/run_PMD_analysis.sh java_human_temp (dont mind the "failed" warning)
+    mkdir PMD_Human
+    cd PMD_Human
+    mkdir reports
+    mkdir errors
+    mv ../report_unique_* reports
+    mv ../errors_unique_* errors
+    python ../3_Code_Defects_Analysis/process_PMD_results.py
+
+  ## Running Vulnerabilities Analysis
+
+    cd .. (main directory)
+    python 4_Code_Security_Analysis/run_semgrep_java.py 1_dataset_sample_100/java_dataset.jsonl 100
+    python 4_Code_Security_Analysis/process_semgrep_results_java.py semgrep_batches/1_dataset_sample_100/java_dataset.jsonl_semgrep_results_batch 1      
+
+  ## Running Complexity Analysis
+
+    python 5_Code_Complexity_Analysis/complexity_stats_java.py
+
+
+# REMOVE ENVIRONMENT
+
+  conda deactivate
+  conda remove --name Human_vs_AI --all

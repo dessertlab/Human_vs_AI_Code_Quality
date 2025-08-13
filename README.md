@@ -45,3 +45,9 @@ It contains the datasets, code, and analyses used in our experiments on code def
 ## 6. **Results**  
 
   Contains the complete reports and results obtained from our experimental evaluation, including reports on defects, security vulnerabilities and complexity metrics for both Python and Java.
+
+
+## 7. **Setup and Run Instructions**
+
+  The file ``run_instructions.txt`` contains a detailed list of commands to replicate the full experimental evaluation on any Unix-based OS (e.g., Linux, macOS). It sets up a conda environment with all required packages, runs all analyses on the python and java datasets, and removes the environment if necessary. 
+  To replicate the full evaluation, please make sure to download the complete datasets from the provided Zenodo link, to modify the required paths and fields to correctly execute each script, and to run the analyses for each code field: human_code, chatgpt_code, dsc_code, and qwen_code.
